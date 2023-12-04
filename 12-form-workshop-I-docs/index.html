@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    
     <!-- #2 Seperate PoperJS and BootstrapJS-->
     <script
       defer
@@ -25,6 +26,81 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script defer src="script.js"></script>
+    
   </head>
-  <body></body>
+  <body>
+    <div class="container border border-primary text-center">      
+      <div class="row border border-success vertical-center justify-content-center flex-column ">      
+        <div class="col-5  p-2 rounded-4 align-self-center b-ground shadow-lg" >
+          <p class="m-ctrl "> <strong>Try it free 7 days</strong> then $20/mo. thereafter </p>          
+        </div> 
+
+        <div class="col-5 p-5 m-4 bg-white rounded-4 text-start">          
+          <form class="needs-validation" novalidate>
+            <div class="mb-4">                         
+              <input type="text" class="form-control" id="firstname" placeholder="Firstname" aria-label="firstname" required> 
+              <div id="validationfirstname" class="invalid-feedback">
+                <p>Please, input your firstname.</p>
+              </div>             
+            </div>
+
+            <!-- <br> -->
+            <div class="mb-4">           
+              <input type="text" class="form-control" id="lastname" placeholder="Lastname" aria-label="lastname" required>
+              <div id="validationlastname" class="invalid-feedback">
+                <p>Please, input your lastname.</p>
+              </div>
+            </div>
+
+            <!-- <br> -->
+            <div class="mb-4">
+              <input type="email" class="form-control" id="email" placeholder="Email" aria-label="email" required>
+              <div id="validationemail" class="invalid-feedback">
+                <p>Please, input your e-Mail.</p>
+              </div>
+            </div>
+
+            <!-- <br> -->
+            <div class="mb-4">       
+              <input type="password" class="form-control" id="password" placeholder="Password" aria-label="password" required>
+              <div id="validationpassword" class="invalid-feedback">
+                <p>Please, input your password.</p>
+              </div>
+            </div>
+            
+            <!-- <br> -->
+            <div id="liveAlertPlaceholder"></div>            
+            <button type="submit" class="btn btn-success col-12">CLAIM YOUR FREE TRIAL</button>
+            <br>
+            <p class="pf-size  text-center">By clicking the button, you are agreeing to our 
+              <a class="link-offset-2 link-underline link-underline-opacity-0" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <strong class="st-color">Terms and Services</strong>
+              </a>
+            </p>
+
+            <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel"> Term of Services</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio eum repellendus, voluptas fugit pariatur illum. Assumenda nulla quisquam laborum eaque saepe veritatis nisi amet ullam quo consectetur ex velit at eligendi autem fuga quia, doloribus nihil. Itaque voluptatibus exercitationem consectetur quae ex placeat id sunt! Libero quibusdam voluptates iste consectetur aliquid, inventore adipisci, dicta mollitia doloribus atque fuga reprehenderit ut laborum consequuntur! Iusto dolor eum voluptatem aperiam ipsa consectetur, veniam et odit architecto. Assumenda veritatis dolores recusandae debitis expedita possimus unde beatae vero, dolorem impedit inventore doloribus optio minus ullam alias sed nam est ab iure enim cumque deserunt ipsum! Blanditiis, vel deserunt saepe sit ad vero voluptatem amet, fugiat aliquid minima consequatur esse labore. Est assumenda autem numquam, quis, doloremque illo vitae labore provident veritatis hic deserunt omnis modi voluptate odit. Eaque quia voluptatibus velit nobis qui, aliquam voluptates magnam ipsum, fugiat corporis explicabo distinctio ut reprehenderit alias quos recusandae, odit dolor doloremque commodi dicta. Necessitatibus beatae quisquam adipisci libero consectetur quam ab, eum facilis, dolorem, voluptas aut excepturi quae. Esse libero quisquam in porro incidunt sit labore illo distinctio possimus eum quos soluta quae, est iste ea numquam unde doloremque neque pariatur nesciunt animi nihil? Error, tenetur.
+                        </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                      </button>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
